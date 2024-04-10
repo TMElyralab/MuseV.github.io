@@ -357,6 +357,21 @@ Wenjiang Zhou
     </tr>
 </table>
 
+        <script>
+        // Get the navbar element
+        const navbar = document.getElementById("navbar");
+
+        // Get all h1 elements on the page
+        const headings = document.getElementsByTagName("h1");
+
+        // Loop through all h1 elements and create a link for each one
+        for (const heading of headings) {
+            const link = document.createElement("a");
+            link.href = "#" + heading.id;
+            link.textContent = heading.textContent;
+            navbar.appendChild(link);
+        }
+    </script>
 </body>
 </html>
 </div>
