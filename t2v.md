@@ -33,7 +33,7 @@ title: demopage
 		<table border="0"> <!-- 表格边框设置为1 -->
     <tr>
         <td>
-            <img src="./assets/images/1.jpeg" width="512" height="900" alt="Image 1">
+            <img src="/assets/images/1.jpeg" width="512" height="900" alt="Image 1">
         </td>
         <td>
             <video width="512" height="900" controls>
