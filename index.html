@@ -46,7 +46,7 @@ Wenjiang Zhou
     <!-- Add the navigation bar -->
     <div class="navbar" id="navbar"></div>
 
-<h1 id="What is MuseV">What is MuseV</h1>
+<h2 id="What is MuseV">What is MuseV</h2>
 <p><code>MuseV</code> is a diffusion-based virtual human video generation framework, which</p>
 <ol>
   <li>supports <strong>infinite length</strong> generation using a novel <strong>Visual Conditioned Parallel Denoising scheme</strong>.</li>
@@ -57,6 +57,13 @@ Wenjiang Zhou
   <li>training codes (coming very soon).</li>
 </ol>
 
+    <h2 id="Overview of model structure" >Overview of model structure</h2>
+
+<img src="/assets/images/musev_structure.png" width="986" height="703" alt="Pipeline">
+
+        <h2 id="Overview of parallel denoising" >Parallel Denoising</h2>
+
+<img src="/assets/images/parallel_denoise.png" width="1000" height="290" alt="Pipeline">
 
     <style>
     img {
@@ -76,7 +83,7 @@ Wenjiang Zhou
         margin: auto;
     }
     </style>
-	<h1 id="Text2Video Demo" >Text2Video Genereation Demos</h1>
+	<h2 id="Text2Video Demo" >Text2Video Genereation Demos</h2>
 	<p></p>
 	<table border="0"> <!-- 表格边框设置为1 -->
     <tr> <!-- 表格的一行 -->
@@ -310,7 +317,7 @@ Wenjiang Zhou
 
 </table>
 
-	<h1 id="Video2Video Demo" >Video2Video Genereation Demos</h1>
+	<h2 id="Video2Video Demo" >Video2Video Genereation Demos</h2>
 	<p></p>
 	<table border="0"> <!-- 表格边框设置为1 -->
     <tr> <!-- 表格的一行 -->
@@ -330,7 +337,7 @@ Wenjiang Zhou
 </table>
     <video src="/assets/demo_videos/video1_plus.mp4"  width="1000" height="900" controls>
     </video>
-	<h1 id="Long Video Generation" >Long Video Genereation</h1>
+	<h2 id="Long Video Generation" >Long Video Genereation</h2>
 	<p></p>
 	<table border="0"> <!-- 表格边框设置为1 -->
     <tr> <!-- 表格的一行 -->
@@ -362,7 +369,7 @@ Wenjiang Zhou
         const navbar = document.getElementById("navbar");
 
         // Get all h1 elements on the page
-        const headings = document.getElementsByTagName("h1");
+        const headings = document.getElementsByTagName("h2");
 
         // Loop through all h1 elements and create a link for each one
         for (const heading of headings) {
