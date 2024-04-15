@@ -1,11 +1,13 @@
 ---
 layout: default
-title: MuseV Project Page
+title: MuseV
+subtitle:  Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel Denoising
 ---
+
+<h3 id="subtitle" style="text-align: center;">Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel Denoising</h3>
 
 <div class="post">
 <p><font size=5>
-</br>
 Zhiqiang Xia <sup>*</sup>,
 Zhaokang Chen<sup>*</sup>,
 Bin Wu<sup>†</sup>,
@@ -59,11 +61,11 @@ Wenjiang Zhou
 
     <h2 id="Overview of model structure" >Overview of model structure</h2>
 
-<img src="/assets/images/musev_structure.png" width="986" height="703" alt="Pipeline">
+<img src="/MuseV.github.io/assets/images/musev_structure.png" width="986" height="703" alt="Pipeline">
 
         <h2 id="Overview of parallel denoising" >Parallel Denoising</h2>
 
-<img src="/assets/images/parallel_denoise.png" width="1000" height="290" alt="Pipeline">
+<img src="/MuseV.github.io/assets/images/parallel_denoise.png" width="1000" height="290" alt="Pipeline">
 
     <style>
     img {
@@ -83,7 +85,235 @@ Wenjiang Zhou
         margin: auto;
     }
     </style>
-	<h2 id="Text2Video Demo" >Text2Video Genereation Demos</h2>
+
+
+
+<h2 id="Long Video Generation" >Long Video Genereation</h2>
+<p></p>
+<table border="0"> <!-- 表格边框设置为1 -->
+<tr> <!-- 表格的一行 -->
+    <th  width="50%" >Source Video</th> <!-- 表头单元格 -->
+    <th width="50%">Output Video</th> <!-- 表头单元格 -->
+</tr>
+</table>
+    <table border="0"> <!-- 表格边框设置为1 -->
+<tr>
+    <td>
+        <video src="/MuseV.github.io/assets/demo_videos/bath_song_lite.mp4"  width="200" height="900" controls></video>
+    </td>
+    <td>
+        <video src="/MuseV.github.io/assets/demo_videos/bath_lite.mp4"  width="800" height="900" controls></video>
+    </td>
+</tr>
+<tr>
+    <td>
+        <video src="/MuseV.github.io/assets/demo_videos/dance1.mp4"  width="200" height="900" controls></video>
+    </td>
+    <td>
+        <video src="/MuseV.github.io/assets/demo_videos/video1.mp4"  width="800" height="900" controls></video>
+    </td>
+</tr>
+</table>
+
+	<h2 id="Text2Video" >Text2Video Genereation</h2>
+	<p></p>
+	<table border="0"> <!-- 表格边框设置为1 -->
+    <tr> <!-- 表格的一行 -->
+        <td width="40%">image</td>
+        <td width="40%">video </td>
+        <td width="20%">prompt</td>
+    </tr>
+    </table>
+	<table border="0"> <!-- 表格边框设置为1 -->
+
+        <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/yongen.jpeg width="400">
+            </td>
+            <td >
+             <video src="https://github.com/TMElyralab/MuseV/assets/163980830/732cf1fd-25e7-494e-b462-969c9425d277" width="100" controls preload></video>
+            </td>
+            <td>(masterpiece, best quality, highres:1),(1boy, solo:1),(eye blinks:1.8),(head wave:1.3)
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/jinkesi2.jpeg width="400">
+            </td>
+            <td>
+             <video src="https://github.com/TMElyralab/MuseV/assets/163980830/62b533d3-95f3-48db-889d-75dde1ad04b7" width="100" controls preload></video>
+            </td>
+            <td>
+            (masterpiece, best quality, highres:1),(1girl, solo:1),(beautiful face,
+            soft skin, costume:1),(eye blinks:{eye_blinks_factor}),(head wave:1.3)
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/seaside4.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/9b75a46c-f4e6-45ef-ad02-05729f091c8f" width="100" controls preload></video>
+            </td>   
+            <td>
+            (masterpiece, best quality, highres:1), peaceful beautiful sea scene
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/seaside_girl.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/d0f3b401-09bf-4018-81c3-569ec24a4de9" width="100" controls preload></video>
+            </td>
+            <td>
+              (masterpiece, best quality, highres:1), peaceful beautiful sea scene
+            </td>
+          </tr>
+          <!-- guitar  -->
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/boy_play_guitar.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/61bf955e-7161-44c8-a498-8811c4f4eb4f" width="100" controls preload></video>
+            </td>
+            <td>
+               (masterpiece, best quality, highres:1), playing guitar
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/girl_play_guitar2.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/40982aa7-9f6a-4e44-8ef6-3f185d284e6a" width="100" controls preload></video>
+            </td>
+            <td>
+              (masterpiece, best quality, highres:1), playing guitar
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/boy_play_guitar2.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/69ea9d0c-5ed0-44b9-bca9-a4829c8d8b68" width="100" controls preload></video>
+            </td>
+            <td>
+              (masterpiece, best quality, highres:1), playing guitar
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/girl_play_guitar4.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/d242e8a4-08ab-474f-b4a8-b718780d2991" width="100" controls preload></video>
+            </td>
+            <td>
+            (masterpiece, best quality, highres:1), playing guitar
+            </td>
+          </tr>
+          <!-- famous people -->
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/dufu.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/28294baa-b996-420f-b1fb-046542adf87d" width="100" controls preload></video>
+            </td>
+            <td>
+            (masterpiece, best quality, highres:1),(1man, solo:1),(eye blinks:1.8),(head wave:1.3),Chinese ink painting style
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/Mona_Lisa.jpg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/1ce11da6-14c6-4dcd-b7f9-7a5f060d71fb" width="100" controls preload></video>
+            </td>   
+            <td>
+            (masterpiece, best quality, highres:1),(1girl, solo:1),(beautiful face,
+            soft skin, costume:1),(eye blinks:{eye_blinks_factor}),(head wave:1.3)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/Portrait-of-Dr.-Gachet.jpg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/4072410a-ecea-4ee5-a9b4-735f9f462d51" width="100" controls preload></video>
+            </td>
+            <td>
+          (masterpiece, best quality, highres:1),(1man, solo:1),(eye blinks:1.8),(head wave:1.3)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/Self-Portrait-with-Cropped-Hair.jpg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/5148beda-a1e1-44f0-ad84-2fb99ad73a11" width="100" controls preload></video>
+            </td>
+            <td>
+          (masterpiece, best quality, highres:1),(1man, solo:1),(eye blinks:1.8),(head wave:1.3), animate
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/The-Laughing-Cavalier.jpg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/df1c5943-15a3-41f5-afe7-e7497c81836d" width="100" controls preload></video>
+            </td>
+            <td>
+              (masterpiece, best quality, highres:1),(1girl, solo:1),(beautiful face,
+            soft skin, costume:1),(eye blinks:{eye_blinks_factor}),(head wave:1.3)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/waterfall4.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/852daeb6-6b58-4931-81f9-0dddfa1b4ea5" width="100" controls preload></video>
+            </td>
+            <td>
+              (masterpiece, best quality, highres:1), peaceful beautiful waterfall, an
+            endless waterfall
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/river.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/d5cb2798-b5ce-497a-a058-ae63d664028e" width="100" controls preload></video>
+            </td>
+            <td>(masterpiece, best quality, highres:1), peaceful beautiful river
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <img src=/MuseV.github.io/assets/images/seaside2.jpeg width="400">
+            </td>
+            <td>
+              <video src="https://github.com/TMElyralab/MuseV/assets/163980830/4a4d527a-6203-411f-afe9-31c992d26816" width="100" controls preload></video>
+            </td>
+            <td>(masterpiece, best quality, highres:1), peaceful beautiful sea scene
+            </td>
+          </tr>
+        
+</table>
+
+	<h2 id="Video2Video" >Video2Video Genereation</h2>
 	<p></p>
 	<table border="0"> <!-- 表格边框设置为1 -->
     <tr> <!-- 表格的一行 -->
@@ -94,275 +324,18 @@ Wenjiang Zhou
 		<table border="0"> <!-- 表格边框设置为1 -->
     <tr>
         <td>
-            <img src="/assets/images/1.jpeg" width="512" height="900" alt="Image 1">
+            <img src="/MuseV.github.io/assets/images/cyber_girl.png" width="512" height="900" alt="Image 3">
         </td>
         <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/1.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/2.png" width="512" height="900" alt="Image 2">
+            <img src="/MuseV.github.io/assets/images/spark_girl.png" width="512" height="900" alt="Image 3">
         </td>
         <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/2.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/3.jpeg" width="512" height="900" alt="Image 3">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/3.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/4.jpeg" width="512" height="900" alt="Image 4">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/4.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/5.jpeg" width="512" height="900" alt="Image 5">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/5.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/6.jpeg" width="512" height="900" alt="Image 6">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/6.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/7.png" width="512" height="900" alt="Image 7">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/7.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/8.png" width="512" height="900" alt="Image 8">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/8.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/9.png" width="512" height="900" alt="Image 9">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/9.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/10.png" width="512" height="900" alt="Image 10">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/10.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/11.png" width="512" height="900" alt="Image 11">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/11.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/12.png" width="512" height="900" alt="Image 12">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/12.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/13.png" width="512" height="900" alt="Image 13">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/13.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/14.png" width="512" height="900" alt="Image 14">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/14.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/15.png" width="512" height="900" alt="Image 15">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/15.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/16.png" width="512" height="900" alt="Image 16">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/16.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/17.png" width="512" height="900" alt="Image 17">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/17.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/18.png" width="512" height="900" alt="Image 18">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/18.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/19.png" width="512" height="900" alt="Image 19">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/19.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-		<tr>
-        <td>
-            <img src="/assets/images/20.jpeg" width="512" height="900" alt="Image 20">
-        </td>
-        <td>
-            <video width="512" height="900" controls>
-                <source src="/assets/demo_videos/20.mp4" type="video/mp4">
-                您的浏览器不支持视频标签。
-            </video>
-        </td>
-    </tr>
-
-
-
-</table>
-
-	<h2 id="Video2Video Demo" >Video2Video Genereation Demos</h2>
-	<p></p>
-	<table border="0"> <!-- 表格边框设置为1 -->
-    <tr> <!-- 表格的一行 -->
-        <th style="width: 512px;">Image</th> <!-- 表头单元格 -->
-        <th style="width: 512px;">Video</th> <!-- 表头单元格 -->
-    </tr>
-    </table>
-		<table border="0"> <!-- 表格边框设置为1 -->
-    <tr>
-        <td>
-            <img src="/assets/images/cyber_girl.png" width="512" height="900" alt="Image 3">
-        </td>
-        <td>
-            <img src="/assets/images/spark_girl.png" width="512" height="900" alt="Image 3">
+            <video src="/MuseV.github.io/assets/demo_videos/video1_plus.mp4"  width="1000" height="900" controls></video>
         </td>
     </tr>
 </table>
-    <video src="/assets/demo_videos/video1_plus.mp4"  width="1000" height="900" controls>
-    </video>
-	<h2 id="Long Video Generation" >Long Video Genereation</h2>
-	<p></p>
-	<table border="0"> <!-- 表格边框设置为1 -->
-    <tr> <!-- 表格的一行 -->
-        <th style="width: 200px;">Source Video</th> <!-- 表头单元格 -->
-        <th style="width: 800px;">Output Video</th> <!-- 表头单元格 -->
-    </tr>
-    </table>
-		<table border="0"> <!-- 表格边框设置为1 -->
-    <tr>
-        <td>
-            <video src="/assets/demo_videos/bath_song_lite.mp4"  width="200" height="900" controls></video>
-        </td>
-        <td>
-            <video src="/assets/demo_videos/bath_lite.mp4"  width="800" height="900" controls></video>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <video src="/assets/demo_videos/dance1.mp4"  width="200" height="900" controls></video>
-        </td>
-        <td>
-            <video src="/assets/demo_videos/video1.mp4"  width="800" height="900" controls></video>
-        </td>
-    </tr>
-</table>
+
+
 
         <script>
         // Get the navbar element
