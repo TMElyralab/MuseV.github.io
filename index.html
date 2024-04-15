@@ -4,7 +4,7 @@ title:
 subtitle: MuseV  Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel Denoising
 ---
 
-<h3 id="subtitle" style="text-align: center;">Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel Denoising</h3>
+<h3 id="subtitle" style="text-align: center;">MuseV: Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel Denoising</h3>
 
 <div class="post">
 <p><font size=5>
@@ -25,7 +25,7 @@ Wenjiang Zhou
     .navbar {
         background-color: #333;
         height: 100%;
-        left: -200px; /* Start off the screen */
+        left: 0; /* Start on the screen */
         overflow: hidden;
         position: fixed;
         top: 0;
@@ -51,24 +51,25 @@ Wenjiang Zhou
         background-color: #ddd;
         color: black;
     }
-    /* Show the navbar when the body has the navbar-open class */
-    body.navbar-open .navbar {
-        left: 0;
+    /* Hide the navbar when the body has the navbar-closed class */
+    body.navbar-closed .navbar {
+        left: -200px;
     }
 </style>
 
-<!-- Add the navigation bar -->
-<div class="navbar" id="navbar">
-    <!-- Add a button to toggle the navbar -->
-    <button onclick="toggleNavbar()">Toggle Navbar</button>
-</div>
 
-<script>
-    function toggleNavbar() {
-        // Add or remove the navbar-open class
-        document.body.classList.toggle('navbar-open');
-    }
-</script>
+    <!-- Add the navigation bar -->
+    <div class="navbar" id="navbar">
+        <!-- Add a button to toggle the navbar -->
+        <button onclick="toggleNavbar()">Toggle Navbar</button>
+    </div>
+
+    <script>
+        function toggleNavbar() {
+            // Add or remove the navbar-closed class
+            document.body.classList.toggle('navbar-closed');
+        }
+    </script>
 
 <h2 id="What is MuseV">What is MuseV</h2>
 <p><code>MuseV</code> is a diffusion-based virtual human video generation framework, which</p>
