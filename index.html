@@ -20,7 +20,6 @@ Wenjiang Zhou
 </font></p>
 
 <p><strong><a href="https://github.com/TMElyralab/MuseV">Github</a></strong>    <strong><a href="https://huggingface.co/TMElyralab/MuseV">Huggingface</a></strong>  <strong><a href="https://huggingface.co/spaces/AnchorFake/MuseVDemo">HuggingfaceSpace</a></strong>  <strong>Technical report (coming soon)</strong></p>
-
 <style>
     /* Add styling for the navigation bar */
     .navbar {
@@ -34,14 +33,21 @@ Wenjiang Zhou
         width: 200px;
         z-index: 100;
     }
-    .navbar a {
+    .navbar a,
+    .navbar button {
         color: white;
         display: block;
         padding: 14px 16px;
         text-align: left;
         text-decoration: none;
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
     }
-    .navbar a:hover {
+    .navbar a:hover,
+    .navbar button:hover {
         background-color: #ddd;
         color: black;
     }
@@ -52,10 +58,10 @@ Wenjiang Zhou
 </style>
 
 <!-- Add the navigation bar -->
-<div class="navbar" id="navbar"></div>
-
-<!-- Add a button to toggle the navbar -->
-<button onclick="toggleNavbar()">Toggle Navbar</button>
+<div class="navbar" id="navbar">
+    <!-- Add a button to toggle the navbar -->
+    <button onclick="toggleNavbar()">Toggle Navbar</button>
+</div>
 
 <script>
     function toggleNavbar() {
@@ -63,7 +69,6 @@ Wenjiang Zhou
         document.body.classList.toggle('navbar-open');
     }
 </script>
-
 
 <h2 id="What is MuseV">What is MuseV</h2>
 <p><code>MuseV</code> is a diffusion-based virtual human video generation framework, which</p>
